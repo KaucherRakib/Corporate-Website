@@ -1,0 +1,97 @@
+#top_header{
+    background-color: $primary-color;
+    .container{
+        padding-right: 0px;
+    }
+
+    .top_left p{
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .top_middle{
+        background-color: #353535;
+        clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+        padding: 20px 0px;
+
+        p{
+            text-align: center;
+            color: #ffff;
+            font-weight: 400;
+        }
+    }
+    .top_right{ 
+        ul{
+            text-align: right;
+            li{
+                display: inline-block;
+                margin-left: 35px;
+                position: relative;
+
+                a{
+                    color: $secondary-color;
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    position: relative;
+                    text-align: center;
+                }
+                a::after{
+                        content: '';
+                        position: absolute;
+                        background-color: $secondary-color;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        transform: scale(0);
+                        transition: 0.20s ease-in;
+                }
+                a::before{
+                        content: '';
+                        position: absolute;
+                        background-color: $secondary-color;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        transform: scale(0);
+                        transition: 0.20s ease-in;
+                }
+            }
+
+            li::after{
+                content: '';
+                position: absolute;
+                background-color: $secondary-color;
+                top: 0;
+                left: 0;
+                width: 1px;
+                height: 100%;
+                transform: scale(0);
+                transition: 0.20s ease-in;
+            }
+            li::before{
+                content: '';
+                position: absolute;
+                background-color: $secondary-color;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                transform: scale(0);
+                transition: 0.20s ease-in;
+            }
+
+            li:hover::before,
+            li:hover::after,
+            li a:hover::before,
+            li a:hover::after{
+                transform: scale(1.3);
+            }
+            
+            
+        }
+    }
+}

@@ -1,0 +1,46 @@
+#our_folio{
+    margin-bottom: 0px;
+}
+
+.portfolio_slide{
+    margin-top: 30px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.folio_img img{
+    width: 100%;
+    display: block;
+}
+.folio_img{
+    position: relative;
+}
+.folio_img .overlay{
+    position: absolute;
+    text-align: center;
+    padding-top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    width: 100%;
+    background-color: rgba(255,202,54,.75);
+    clip-path: polygon(0 44%, 100% 0, 100% 100%, 0% 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: .5s;
+}
+
+.folio_img:hover .overlay{
+    transform: scaleY(1);
+}
+
+.folio_img .overlay h5{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.folio_img .overlay p{
+    color: var(--secendary-color);
+    font-size: 14px;
+    font-weight: 500;
+}

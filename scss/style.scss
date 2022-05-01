@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.navbar,span,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+// common color variable //
+    $primary-color: #ffca36;
+    $secondary-color: #353535;
+    $white-color: #ffff;
+
+// top header style starts here//
+@import "./TopHeader";
+
+// navbar style starts here//
+@import "./navbar";
+
+// banner part starts here//
+@import "./banner";
+
+// Our Services part starts here//
+@import "./services";
+
+// about part starts here//
+@import "./about";
+
+//portfolio part starts here//
+@import "./portfolio";
+
+//number part starts here//
+@import "./numberBanner";
+
+// our blog part starts here//
+@import "./ourBlog";
+
+//testimonial part starts here//
+@import "./testimonial";
+
+//cart part starts here//
+@import "./cart";
+
+//cart part starts here//
+@import "./footer";
+
+
+
+
+// back to top button//
+.back_top{
+    position: fixed;
+    background-color: #ffca36;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 30px;
+    z-index: 5;
+    display: none;
+}
+.back_top p{
+  color: #323232;
+  font-size: 20px;
+  padding: 15px 15px;
+}

@@ -1,0 +1,80 @@
+#our_services{
+    margin: 60px 0px;
+}
+.head_part{
+   text-align: center;
+   padding: 0px 320px;
+}
+
+.head_part h2{
+    color: $secondary-color;
+    font-size: 35px;
+    font-weight: 300;
+}
+.head_part p{
+    color:  $secondary-color;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ===services cnt====== */
+.services_cnt{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.service_logo{
+    border: 1px solid  $secondary-color;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    position: relative;
+    transition: .5s;
+}
+.service_logo::after{
+    content: '';
+    position: absolute;
+    top: 116px;
+    left: 92px;
+    width: 50px;
+    height: 1px;
+    border: 1px dashed  $secondary-color;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.service_logo img{
+    transform: rotate(-45deg);
+}
+
+.service_text{
+    margin-top: 70px;
+    border: 1px solid $secondary-color;
+    padding: 30px 25px;
+    transition: .5s;
+    text-align: justify;
+    text-align: center;
+}
+
+.service_text h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: $secondary-color;
+}
+
+.service_text p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.services_cnt:hover .service_logo,
+.services_cnt:hover .service_logo::after,
+.services_cnt:hover .service_text{
+    border-color: $primary-color;
+}
